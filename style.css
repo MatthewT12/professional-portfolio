@@ -130,7 +130,7 @@ body {
 .background-one {
     min-height: 350px;
     max-height: 350px;
-
+    width: 700px;
     border: solid black 5px;
     background-image: url("./images/run-buddy-screenshot.png");
     background-size: cover;
@@ -138,13 +138,24 @@ body {
 }
 
 .background-one:hover {
-    transform: scale(1.2); 
+    transform: scale(1.1); 
+}
+
+.background-two {
+    min-height: 200px;
+    max-height: 200px;
+    width: 300px;
+    border: solid black 5px;
+    background-image: url("./images/placeholder-image.png");
+    background-size: cover;
+    float: right;
 }
 
 .projects {
     margin: 25px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .projects h2 {
