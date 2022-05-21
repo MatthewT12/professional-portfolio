@@ -9,9 +9,15 @@ html {
 }
 
 header {
-    padding: 20px 35px;
+    padding: 0px 35px;
+    padding-top: 10px;
     background-color: #1a1e21;
+    position: fixed;
+    right: 0px;
+    left: 0px;
 }
+
+
 
 header h1  {
     font-weight: bold;
@@ -19,6 +25,10 @@ header h1  {
     color: #068c9e;
     margin: 0;
     display: inline;
+}
+
+header h1:hover {
+    transform: scale(1.1);
 }
 
 header a {
@@ -33,6 +43,8 @@ header nav {
 
 header nav ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
 }
 
 header nav ul li:hover {
@@ -127,28 +139,26 @@ body {
     margin: 16px;
 }
 
-.background-one {
-    min-height: 350px;
-    max-height: 350px;
-    width: 700px;
-    border: solid black 5px;
+.col {
+    /*border: solid black 5px;*/
+    min-height: 380px;
+    max-height: 380px;
+    border: solid black 2px;
     background-image: url("./images/run-buddy-screenshot.png");
     background-size: cover;
-    float: right;
+    margin: 20px;
 }
-
-.background-one:hover {
-    transform: scale(1.1); 
+.col:hover {
+    transform: scale(1.05);
 }
-
-.background-two {
-    min-height: 200px;
-    max-height: 200px;
-    width: 300px;
-    border: solid black 5px;
-    background-image: url("./images/placeholder-image.png");
-    background-size: cover;
-    float: right;
+.soon {
+    background-image: url("./images/Coming-Soon.jpg")
+}
+.row {
+    min-width: 300px;
+}
+.container {
+    padding-left: 60px;
 }
 
 .projects {
@@ -175,6 +185,12 @@ footer {
     width: 100%;
     padding: 40px 35px;
     margin-bottom: 0px;
+    margin-top: 610px;
+}
+
+#contact-me {
+    height: 100px;
+    
 }
 
 footer h2 {
